@@ -1,0 +1,11 @@
+@import 'elements/content.scss';
+@import 'elements/header.scss';
+@import 'elements/nav-menu.scss';
+/*sass --watch src/style/index.scss:src/index.css*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100;200&display=swap');
+
+body {
+    background-color: rgb(71, 71, 71);
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}

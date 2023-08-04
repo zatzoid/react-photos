@@ -1,0 +1,55 @@
+@mixin background($url) {
+    background-image: url($url);
+    background-size: cover;
+}
+
+
+.nav-menu {
+    padding: 25px 25px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    &__heading {
+        margin: 0;
+        font-size: 25px;
+    }
+
+}
+
+.nav-menu__links {
+    display: flex;
+    gap: 20px;
+
+    &-el {
+
+        width: 25px;
+        height: 25px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.nav-menu__like {
+    @include background('./images/dev-img/like.svg');
+
+    &_active {
+        @include background('./images/dev-img/like_active.svg')
+    }
+}
+
+.nav-menu__tg {
+
+    @include background('./images/dev-img/telegram-5945.svg')
+}
+
+.nav-menu__gh {
+
+    @include background('./images/dev-img/gh.svg')
+}
