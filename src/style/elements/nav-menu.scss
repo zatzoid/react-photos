@@ -3,9 +3,16 @@
     background-size: cover;
 }
 
+.nav-menu-wrapper {
+    min-height: 78px;
+    position: relative;
+}
 
 .nav-menu {
+    position: absolute;
+    width: 100%;
     padding: 25px 25px;
+    box-sizing: border-box;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -13,6 +20,13 @@
     &__heading {
         margin: 0;
         font-size: 25px;
+    }
+
+    &_active {
+        position: fixed;
+        top: 0;
+        background-color: rgb(71, 71, 71);
+        width: 100%;
     }
 
 }

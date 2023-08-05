@@ -1,3 +1,13 @@
+@keyframes scroll {
+    from {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
 .header {
     position: relative;
     height: 100vh;
@@ -18,23 +28,77 @@
 
         &_active {
             opacity: 0.5;
-            transition: all 1s 1s;
+            transition: all 1s 0.5s;
         }
+
     }
 
-    &__block {
-
-        text-align: center;
-        margin: auto;
-        color: white;
+    &__scroll-btn {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        background-color: rgba(255, 255, 255, 0);
+        background-image: url(./images/dev-img/arrow-down-icon.svg);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        animation: scroll 2s 3s infinite alternate;
         opacity: 0;
 
         &_active {
+            transition: all 0.5s 2s;
             opacity: 1;
-            transition: all 1s 1s;
         }
+    }
+
+}
+
+.header-block {
+    text-align: center;
+    margin: auto;
+    color: white;
+    opacity: 0;
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr;
+
+    &_active {
+        opacity: 1;
+        transition: all 1s 1s;
+    }
+
+    &__border {
+        width: 100%;
+        background-color: white;
+
 
     }
+
+
+    &__side {
+        transition: all 0.5s 3s;
+        overflow: hidden;
+        padding: 10px;
+
+
+        &_left {
+            text-align: right;
+            transform: translateX(500px);
+        }
+
+        &_right {
+            text-align: left;
+            transform: translateX(-500px);
+        }
+
+        &_active {
+            transition: all 5s 0.5s;
+            transform: translateX(0);
+        }
+    }
+
 
     &__block-heading {
         margin: 0;
@@ -43,28 +107,14 @@
 
     }
 
-    &__desc {
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
+    &__desc-el {
+        margin: 0;
+        color: white;
+        width: 100%;
+        text-decoration: none;
 
-        :first-child {
-            border-right: 2px solid white;
-
-            padding-right: 20px;
-            margin: 0 20px 0 0 ;
-        }
-
-        :last-child {
-            text-decoration: none;
-            color: white;
-
-            &:hover {
-
-                text-decoration: underline;
-
-            }
-        }
 
     }
+
+
 }

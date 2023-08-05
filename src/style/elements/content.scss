@@ -4,12 +4,14 @@
     grid-auto-rows: min-content;
     width: 100%;
     gap: 10px;
+    padding: 0 25px 25px;
+    box-sizing: border-box;
 }
 
 .card {
     overflow: hidden;
     display: flex;
-    align-items: center;
+
 
     &__el {
         width: 100%;
