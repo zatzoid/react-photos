@@ -1,12 +1,17 @@
 import Card from "./Card";
 
 
-export default function Content({imagePaths}) {
+export default function Content({ imagePaths, popupImg }) {
 
     return (
         <div className="content" id="content">
 
-            {imagePaths.map((el) => ( <Card name={el.name} link={el.link} key={el.name} /> ))}
+            {imagePaths.map((el, index) => (<Card 
+            name={el.name} 
+            link={el.link} 
+            index={index}
+            key={index} 
+            popupImg={popupImg} />))}
         </div>
 
     )
