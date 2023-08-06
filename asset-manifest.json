@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-photos/static/css/main.3129ddec.css",
-    "main.js": "/react-photos/static/js/main.51374b42.js",
+    "main.css": "/react-photos/static/css/main.9cd03099.css",
+    "main.js": "/react-photos/static/js/main.5a1c5600.js",
     "static/js/787.fbaf2acf.chunk.js": "/react-photos/static/js/787.fbaf2acf.chunk.js",
     "static/media/22500405_106151530147138__n.jpg": "/react-photos/static/media/22500405_106151530147138_1522339810763603968_n.b7591b97f6acd876bded.jpg",
     "static/media/i-B6tDNkv-X4.jpg": "/react-photos/static/media/i-B6tDNkv-X4.63a951d7d674f82bbaef.jpg",
@@ -10,6 +10,7 @@
     "static/media/154806825170707.jpg": "/react-photos/static/media/154806825170707.253ea39701aec4ecf226.jpg",
     "static/media/header.jpg": "/react-photos/static/media/header.253ea39701aec4ecf226.jpg",
     "static/media/carville-racing-rds-gp-2022-1-stage-cars-s.jpg": "/react-photos/static/media/carville-racing-rds-gp-2022-1-stage-cars-s.1f824c1db3cb0d5b5ac7.jpg",
+    "static/media/Screenshot_247.png": "/react-photos/static/media/Screenshot_247.de11504b87509fa986ce.png",
     "static/media/ASH_0242.jpg": "/react-photos/static/media/ASH_0242.610f599533da590deda1.jpg",
     "static/media/samye-neobychnye-drift-kary-rds-gp-2020_jpg": "/react-photos/static/media/samye-neobychnye-drift-kary-rds-gp-2020_16002458861401055668.7a456edcd2ce0d713e34.jpg",
     "static/media/rds-01-1024x673.jpg": "/react-photos/static/media/rds-01-1024x673.17b117f889dfa9dfef99.jpg",
@@ -30,16 +31,18 @@
     "static/media/51155617_805773813103744__n.jpg": "/react-photos/static/media/51155617_805773813103744_4294249585493308480_n.be1f11bf8ed1f6a93b03.jpg",
     "static/media/arrow-down-icon.svg": "/react-photos/static/media/arrow-down-icon.dd986d4c576544c6ff38.svg",
     "static/media/gh.svg": "/react-photos/static/media/gh.6be6f416891ec98fef59.svg",
+    "static/media/loup.svg": "/react-photos/static/media/loup.c3c3396b0b2c3ad4c88c.svg",
     "static/media/like.svg": "/react-photos/static/media/like.4e5ba8cd53cd2b28011b.svg",
     "static/media/telegram-5945.svg": "/react-photos/static/media/telegram-5945.d8111e91ab3c05021a4e.svg",
+    "static/media/x.svg": "/react-photos/static/media/x.4203a9824e499ba364f6.svg",
     "static/media/like_active.svg": "/react-photos/static/media/like_active.35518f7f1908a82105f8.svg",
     "index.html": "/react-photos/index.html",
-    "main.3129ddec.css.map": "/react-photos/static/css/main.3129ddec.css.map",
-    "main.51374b42.js.map": "/react-photos/static/js/main.51374b42.js.map",
+    "main.9cd03099.css.map": "/react-photos/static/css/main.9cd03099.css.map",
+    "main.5a1c5600.js.map": "/react-photos/static/js/main.5a1c5600.js.map",
     "787.fbaf2acf.chunk.js.map": "/react-photos/static/js/787.fbaf2acf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3129ddec.css",
-    "static/js/main.51374b42.js"
+    "static/css/main.9cd03099.css",
+    "static/js/main.5a1c5600.js"
   ]
 }
