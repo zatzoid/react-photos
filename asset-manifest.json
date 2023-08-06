@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-photos/static/css/main.9cd03099.css",
-    "main.js": "/react-photos/static/js/main.5a1c5600.js",
+    "main.js": "/react-photos/static/js/main.a944a4e3.js",
     "static/js/787.fbaf2acf.chunk.js": "/react-photos/static/js/787.fbaf2acf.chunk.js",
     "static/media/22500405_106151530147138__n.jpg": "/react-photos/static/media/22500405_106151530147138_1522339810763603968_n.b7591b97f6acd876bded.jpg",
     "static/media/i-B6tDNkv-X4.jpg": "/react-photos/static/media/i-B6tDNkv-X4.63a951d7d674f82bbaef.jpg",
@@ -10,7 +10,6 @@
     "static/media/154806825170707.jpg": "/react-photos/static/media/154806825170707.253ea39701aec4ecf226.jpg",
     "static/media/header.jpg": "/react-photos/static/media/header.253ea39701aec4ecf226.jpg",
     "static/media/carville-racing-rds-gp-2022-1-stage-cars-s.jpg": "/react-photos/static/media/carville-racing-rds-gp-2022-1-stage-cars-s.1f824c1db3cb0d5b5ac7.jpg",
-    "static/media/Screenshot_247.png": "/react-photos/static/media/Screenshot_247.de11504b87509fa986ce.png",
     "static/media/ASH_0242.jpg": "/react-photos/static/media/ASH_0242.610f599533da590deda1.jpg",
     "static/media/samye-neobychnye-drift-kary-rds-gp-2020_jpg": "/react-photos/static/media/samye-neobychnye-drift-kary-rds-gp-2020_16002458861401055668.7a456edcd2ce0d713e34.jpg",
     "static/media/rds-01-1024x673.jpg": "/react-photos/static/media/rds-01-1024x673.17b117f889dfa9dfef99.jpg",
@@ -38,11 +37,11 @@
     "static/media/like_active.svg": "/react-photos/static/media/like_active.35518f7f1908a82105f8.svg",
     "index.html": "/react-photos/index.html",
     "main.9cd03099.css.map": "/react-photos/static/css/main.9cd03099.css.map",
-    "main.5a1c5600.js.map": "/react-photos/static/js/main.5a1c5600.js.map",
+    "main.a944a4e3.js.map": "/react-photos/static/js/main.a944a4e3.js.map",
     "787.fbaf2acf.chunk.js.map": "/react-photos/static/js/787.fbaf2acf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9cd03099.css",
-    "static/js/main.5a1c5600.js"
+    "static/js/main.a944a4e3.js"
   ]
 }
