@@ -26,7 +26,7 @@ export default function NavMenu(props) {
                     </div> : ''}
                     <button className={`nav-menu__like nav-menu__links-el ${likeActive && 'nav-menu__like_active'}`} onClick={like} />
                     <a className="nav-menu__tg nav-menu__links-el" href="#" />
-                    <a className="nav-menu__gh nav-menu__links-el" href="#" />
+                    <a className="nav-menu__gh nav-menu__links-el" target="_blank" href="https://github.com/zatzoid/react-photos" />
 
                 </div>
 
