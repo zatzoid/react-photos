@@ -39,13 +39,13 @@
         left: 50%;
         width: 100px;
         height: 100px;
-        background-color: rgba(255, 255, 255, 0);
+        background-color: var(--col-clear);
         background-image: url(./images/dev-img/arrow-down-icon.svg);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
         border: none;
-        animation: scroll 2s 3s infinite alternate;
+        animation: scroll 2s  infinite alternate;
         opacity: 0;
 
         &_active {
@@ -79,7 +79,7 @@
 
 
     &__side {
-        transition: all 0.5s 3s;
+        transition: all 0.5s 1s;
         overflow: hidden;
         padding: 10px;
         display: flex;
@@ -97,7 +97,7 @@
         }
 
         &_active {
-            transition: all 5s 0.5s;
+            transition: all 3s  ease-in-out;
             transform: translateX(0);
         }
     }

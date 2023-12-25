@@ -29,40 +29,32 @@ function App() {
   }, []);
   /* popupimg */
   const [currentImageIndex, setCurrentImageIndex] = useState(null)
-  const [currentImage, setCurrentImage] = useState(null)
 
-  useEffect(() => {
-    if (currentImageIndex !== null) {
-      setCurrentImage(images[currentImageIndex])
-      setIsNavMenuOnTop(true)
-    }
-  }, [currentImageIndex])
-  const switchCurrentImgIndex = (el) => {
-    setCurrentImageIndex(el)
+  const openPopupImg = (index) => {
+
+    setCurrentImageIndex(index)
+    setIsNavMenuOnTop(true)
+
   }
-  const closePopupImg = () => {
-    setCurrentImage(null)
-    setScale(1)
-  }
+
   const switchNextImg = (el) => {
-    if(currentImageIndex !== images.length -1){
-    setCurrentImageIndex(currentImageIndex + el)}
-    else{
+    if (currentImageIndex + el <= images.length - 1 && currentImageIndex + el >= 0) {
+      setCurrentImageIndex(currentImageIndex + el)
+    }
+    else if (currentImageIndex + el < 0) {
+      setCurrentImageIndex(images.length - 1)
+    }
+    else if (currentImageIndex + el === images.length) {
       setCurrentImageIndex(0)
     }
   }
 
-  /* scale */
-  const [scale, setScale] = useState(1);
+  const closePopupImg = () => {
+    setCurrentImageIndex(null)
+    handleScroll()
+  }
 
-  const handleScaleChange = () => {
-    if (scale < 2) {
-      setScale(scale + 0.5);
-    }
-    else {
-      setScale(1)
-    }
-  };
+
 
 
 
@@ -72,15 +64,14 @@ function App() {
 
       <NavMenu
         isNavMenuOnTop={isNavMenuOnTop}
-        currentImage={currentImage}
-        closePopupImg={closePopupImg}
-        handleScaleChange={handleScaleChange}
       />
-      {currentImage !== null ? <PopupImg
+      {currentImageIndex !== null ? <PopupImg
+        images={images}
         switchNextImg={switchNextImg}
-        currentImage={currentImage}
-        scale={scale} /> : ''}
-      <Content imagePaths={images} popupImg={switchCurrentImgIndex} />
+        currentImageIndex={currentImageIndex}
+        closePopupImg={closePopupImg}
+      /> : ''}
+      <Content imagePaths={images} popupImg={openPopupImg} />
       {isNavMenuOnTop && <a href="#content" className='up-scroll-btn' />}
     </div>
   );

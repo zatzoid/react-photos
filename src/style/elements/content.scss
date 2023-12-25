@@ -1,60 +1,32 @@
 .content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: min-content;
+    column-count: 3;  
+   /*position: relative; */
+
+  /*   display: flex;
+    flex-wrap: wrap; */
     width: 100%;
-    gap: 10px;
+  column-gap: 0;
     padding: 0 25px 25px;
     box-sizing: border-box;
 
 }
 
-.card {
-    overflow: hidden;
-    display: flex;
-    position: relative;
-
-
-
-    &__el {
-        width: 100%;
-        object-fit: cover;
-        object-position: center center;
-        cursor: pointer;
-    }
-
-    &__overlay {
-        position: absolute;
-        width: 100%;
-        height: 50px;
-        bottom: 0;
-        left: 0;
-
-        display: flex;
-        justify-content: end;
-        padding: 50px 10px 10px 0;
-        box-sizing: border-box;
-        transform: translateY(100px);
-        transition: all 0.5s;
-        align-items: end;
-        background: rgb(0,0,0);
-        background: linear-gradient(1deg, rgba(0, 0, 0, 0.808) 30%, rgba(255, 255, 255, 0) 70%);
-
-
-        &-name {
-            color: white;
-            margin: 0 auto 0 10px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            max-width: 70%;
-        }
-    }
-
-
+.content__img-wrapper {
+/*     display: flex;
+    width: 32.3333%;
+    height: auto; */
+    position: absolute;
 }
 
-.card:hover .card__overlay {
-    transform: translateY(0);
-    
+
+
+@media screen and (max-width: 700px) {
+    .content {
+        column-count: 2;
+    }
+}
+@media screen and (max-width: 400px) {
+    .content {
+        column-count: 1;
+    }
 }

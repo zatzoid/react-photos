@@ -2,15 +2,23 @@
 @import 'elements/header.scss';
 @import 'elements/nav-menu.scss';
 @import 'elements/popupImg.scss';
+@import 'elements/preloader.scss';
+@import 'elements/card.scss';
 /*sass --watch src/style/index.scss:src/index.css*/
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100;200&display=swap');
 
 html {
     scroll-behavior: smooth;
 }
+.main{
+    position: relative;
+}
 
 body {
-    background-color: rgb(71, 71, 71);
+    --col-main: rgb(62, 62, 71);
+    --col-main-07: rgba(62, 62, 71, 0.7);
+    --col-clear: rgba(0, 0, 0, 0);
+    background-color: var(--col-main);
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
 
@@ -20,7 +28,7 @@ body {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: rgb(71, 71, 71);
+    background-color: var(--col-main);
     width: 75px;
     height: 75px;
     border-radius: 50%;

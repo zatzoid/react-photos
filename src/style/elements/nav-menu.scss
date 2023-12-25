@@ -6,7 +6,7 @@
 .nav-menu-wrapper {
     min-height: 78px;
     position: relative;
-    z-index: 222;
+    z-index: 5;
 
     &_top {
         position: fixed;
@@ -14,15 +14,20 @@
 
     }
 }
-
+.nav-menu__placeholder{
+    height: 78px;
+    width: 100%;
+}
 .nav-menu {
     position: absolute;
     width: 100%;
-    padding: 25px 25px;
+  height: 78px;
+    padding: 15px 25px;
     box-sizing: border-box;
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 
     &__heading {
@@ -33,7 +38,7 @@
     &_active {
         position: fixed;
         top: 0;
-        background-color: rgb(71, 71, 71);
+        background-color: var(--col-main);
         width: 100%;
     }
 
@@ -51,10 +56,11 @@
 
     &-el {
 
-        width: 25px;
-        height: 25px;
+        width: 35px;
+        height: 35px;
         border: none;
-        background-color: rgba(255, 255, 255, 0);
+        background-color: var(--col-clear);
+        font-size: 0;
 
         &:hover {
             opacity: 0.7;
@@ -64,12 +70,29 @@
 }
 
 
-.nav-menu__like {
-    @include background('./images/dev-img/like.svg');
+.nav-menu__downland {
+   
+    @include background('./images/dev-img/download.svg');
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    width: auto;
+    background-position: top 50% right 7px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding:0 35px 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+   
+}
 
-    &_active {
-        @include background('./images/dev-img/like_active.svg')
-    }
+
+
+.nav-menu__gh {
+
+    @include background('./images/dev-img/gh.svg')
 }
 
 .nav-menu__tg {
@@ -77,15 +100,10 @@
     @include background('./images/dev-img/telegram-5945.svg')
 }
 
-.nav-menu__gh {
-
-    @include background('./images/dev-img/gh.svg')
-}
-
-.nav-menu__loup {
-    @include background('./images/dev-img/loup.svg')
-}
-
-.nav-menu__close {
-    @include background('./images/dev-img/x.svg')
+@media screen and (max-width: 700px) {
+    .nav-menu__downland{
+        font-size: 0px;
+        border: none;
+    } 
+    
 }
